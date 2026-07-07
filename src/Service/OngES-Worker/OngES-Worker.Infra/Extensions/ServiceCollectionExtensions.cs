@@ -23,7 +23,7 @@ namespace Infra.Extensions
             services.AddScoped<IPostCampaignBalanceRepository, PostCampaignBalanceRepository>();    
             
             //Registro dos UseCases
-            services.AddScoped<PostCampaignBalanceUseCase>();
+            services.AddScoped<IPostCampaignBalanceUseCase, PostCampaignBalanceUseCase>();
 
             return services;
         }
